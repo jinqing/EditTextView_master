@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <com.example.edittextview_master.view.DrawableEditText
+                android:id="@+id/drawableEditTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hint="@string/user"
+                delImgRes="@drawable/delete"
+                nullImgRes="@drawable/bg_no_user"
+                imgRes="@drawable/bg_user" >
+            </com.example.edittextview_master.view.DrawableEditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <com.example.edittextview_master.view.DrawableEditText
+                android:id="@+id/drawableEditTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hint="@string/pas"
+                delImgRes="@drawable/delete"
+                nullImgRes="@drawable/bg_no_pas"
+                imgRes="@drawable/bg_pas" >
+            </com.example.edittextview_master.view.DrawableEditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/v_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:hint="请输入验证码" />
+
+            <ImageView
+                android:id="@+id/vc_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="确定" />
+
+    </LinearLayout>
+
+</RelativeLayout>
